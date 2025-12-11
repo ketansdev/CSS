@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+
+
+#container{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    position: relative;
+}
+
+#circle{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+}
