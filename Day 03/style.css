@@ -1,0 +1,20 @@
+
+#firstId{
+    background-color: yellow;
+}
+
+h1{
+    background-color: red;
+}
+
+.firstClass{
+    background-color: green;
+}
+
+li{
+    background-color: pink;
+}
+
+h2{
+    background-color: tomato !important;
+}
