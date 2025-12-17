@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    perspective: 800px;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.red{
+    background-color: red;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: all 1s;
+    /* transform: skewX(20deg); */
+}
+
+.box:hover{
+    /* transform: scale(2); */
+    /* transform: translate(100px, 200px); */
+    /* transform: rotate(30deg); */
+    /* transform: translateZ(-50px); */
+    transform: rotateX(40deg);
+}
