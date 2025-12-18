@@ -26,8 +26,22 @@
     width: 150px;
     height: 150px;
     cursor: pointer;
-    transition: all 1s;
+    /* transition: all 1s; */
     /* transform: skewX(20deg); */
+
+    animation: moving;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moving {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 .box:hover{
@@ -35,5 +49,5 @@
     /* transform: translate(100px, 200px); */
     /* transform: rotate(30deg); */
     /* transform: translateZ(-50px); */
-    transform: rotateX(40deg);
+    /* transform: rotate(40deg); */
 }
