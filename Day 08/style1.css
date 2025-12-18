@@ -49,5 +49,5 @@
     /* transform: translate(100px, 200px); */
     /* transform: rotate(30deg); */
     /* transform: translateZ(-50px); */
-    /* transform: rotate(40deg); */
+    transform: rotate(40deg);
 }
