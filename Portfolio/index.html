@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="main-container">
         <!-- Side bar -->
-         <div class="sidebar">
+        <div class="sidebar">
 
             <!-- profile -->
 
-             <div class="profile">
+            <div class="profile">
                 <img src="./assets/professional-passport-img.png" alt="">
                 <h2>Ketan Shetge</h2>
                 <p>Frontend Devloper</p>
-             </div>
+            </div>
 
             <!-- contact -->
 
@@ -37,11 +39,162 @@
             </div>
 
             <!-- socila media -->
-         </div>
+
+            <div class="social">
+                <a href="">
+                    <img src="https://simpleicons.org/icons/github.svg" alt="github_logo">
+                    <img src="https://simpleicons.org/icons/x.svg" alt="twitter_logo">
+                    <img src="https://www.svgrepo.com/show/204944/linkedin.svg" alt="linkedin_logo">
+                </a>
+            </div>
+
+        </div>
 
 
         <!-- Main content -->
-         <div class="main-content"></div>
-    </div>
+        <div class="main-content">
+
+            <!-- navigation -->
+
+            <div class="navigation">
+                <nav>
+                    <a href="#about" class="active">About</a>
+                    <a href="#skilss">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#portfolio">Portfolio</a>
+                </nav>
+            </div>
+
+            <!-- about me -->
+
+            <div id="about">
+                <h2 class="heading">About Me</h2>
+                <div class="line"></div>
+                <p class="content">I am a passionate Frontend Developer focused on creating responsive and visually
+                    appealing websites using HTML, CSS, and JavaScript. I have hands-on experience building projects
+                    from scratch and following best practices for clean and maintainable code. I am actively learning
+                    modern tools and frameworks to become job-ready and contribute effectively to real-world
+                    applications.</p>
+            </div>
+
+            <!-- skills -->
+
+            <div id="skills">
+                <h2 class="heading">Skills</h2>
+                <div class="line"></div>
+
+                <div class="grid-container">
+                    <div class="item">
+                        <img src="https://simpleicons.org/icons/html5.svg" alt="html_icon">
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="item">
+                        <img src="https://simpleicons.org/icons/css.svg" alt="css_icon">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="item">
+                        <img src="https://simpleicons.org/icons/javascript.svg" alt="javascript_icon">
+                        <h3>Javascript</h3>
+                    </div>
+                    <div class="item">
+                        <img src="https://simpleicons.org/icons/react.svg" alt="react_icon">
+                        <h3>React</h3>
+                    </div>
+                    <div class="item">
+                        <img src="https://simpleicons.org/icons/git.svg" alt="git_icon">
+                        <h3>Git & Github</h3>
+                    </div>
+                    <div class="item">
+                        <img src="https://simpleicons.org/icons/typescript.svg" alt="typescript_icon">
+                        <h3>Typescript</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- education -->
+
+            <div id="education">
+                <h2 class="heading">Education</h2>
+                <div class="line"></div>
+
+                <div class="edtech">
+                    <div class="edfirst">
+                        <div class="year">2018-2021</div>
+                        <h3 class="degree">Bachelors in Science - Information & Technology</h3>
+                        <p class="college">Lala Lajpatrai College of Commerce and Economics</p>
+                        <p class="work">Focused on software devlopment , basic algorithms and web technologies.
+                            Completed final year project</p>
+                        <div class="goal"></div>
+                    </div>
+                    <div class="edsecond">
+                        <div class="year">2016-2018</div>
+                        <h3 class="degree">HSC - Science Stream</h3>
+                        <p class="college">D.G Ruparel college of Arts , Science & Commerce</p>
+                        <p class="work">Particpated in different college fests and Social activities</p>
+                        <div class="goal"></div>
+                    </div>
+                    <div class="liner"></div>
+                </div>
+            </div>
+
+
+            <!-- portfolio -->
+
+            <div id="portfolio">
+                <h2 class="heading">Portfolio</h2>
+                <div class="line"></div>
+
+                <div class="project-container">
+                    <div class="project">
+                        <img src="https://media.istockphoto.com/id/1356364268/photo/close-up-focus-on-persons-hands-typing-on-the-desktop-computer-keyboard-screens-show-coding.webp?a=1&b=1&s=612x612&w=0&k=20&c=rLOBLfP2c6SKAXPAoZZndGm0OhF6QT-t3a_kQvzIePU="
+                            alt="">
+                        <div class="card">
+                            <h3>E-Commerce Website</h3>
+                            <p>A fully responsive online store built with modern design principles</p>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="https://media.istockphoto.com/id/1292991881/photo/the-more-you-know-the-more-your-business-grows.webp?a=1&b=1&s=612x612&w=0&k=20&c=XAMGgXCZhjA5YdEQGY3-eRHsMaAUaAK_i1yEunReR8w="
+                            alt="">
+                        <div class="card">
+                            <h3>Business Landing Page</h3>
+                            <p>A sleek, single-page site for a corporate client to generate leads</p>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Flexbox</span>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDB8MHwwfHx8Mg%3D%3D"
+                            alt="">
+                        <div class="card">
+                            <h3>Analytics Dashboard UI</h3>
+                            <p>A data visualization dashboard UI created with CSS Grid</p>
+                            <span>GRID</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="https://media.istockphoto.com/id/1049540094/photo/blog-colorful-theme.jpg?s=612x612&w=0&k=20&c=cPJiNwBzjxantydhXSmyQEEJSyrnDgG7NqeE5iGk39Y="
+                            alt="">
+                        <div class="card">
+                            <h3>Personal Blog Theme</h3>
+                            <p>A clean, content-focused blog theme designed for readability</p>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
 </body>
+
 </html>
