@@ -8,8 +8,10 @@
   width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(
-      90deg,
-      rgba(42, 123, 155, 0.6),
+      to right top,
+      rgba(5, 25, 55, 0.6),
+      rgba(0, 77, 122, 0.6),
+      rgba(48, 141, 177, 0.6),
       rgba(87, 199, 133, 0.6),
       rgba(237, 221, 83, 0.6)
     ),
@@ -43,6 +45,6 @@
 
 span{
   margin: 10px;
-  color: #162429;
-  text-shadow: 3px 3px 5px #87d4f0
+  color: #031507;
+  text-shadow: 3px 3px 5px #83f353
 }
