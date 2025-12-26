@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fredoka:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --main-color : #000;
+    --font-color : #fff;
+    --bg-color : #000;
+    --heading-color: #ff0000;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+p,
+li,
+a {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.8rem;
+  letter-spacing: .3rem;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Navbar */
+.site-header {
+  background-color: #000;
+}
+.navbar {
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  width: 6rem;
+}
+
+.brand-logo a img {
+  width: 100%;
+}
+
+.brand-logo a,
+.nav-item a {
+  text-decoration: none;
+}
+
+.nav-item a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav-container ul {
+  display: flex;
+  list-style: none;
+  gap: 6rem;
+}
+
+.menu {
+    color: #fff;
+    display: none;
+}
