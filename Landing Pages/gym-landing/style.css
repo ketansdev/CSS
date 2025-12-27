@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
-:root{
-    --main-color : #000;
-    --font-color : #fff;
-    --bg-color : #000;
-    --heading-color: #ff0000;
+:root {
+  --main-color: #000;
+  --font-color: #fff;
+  --bg-color: #000;
+  --heading-color: #ff0000;
 }
 
 html {
@@ -38,7 +38,7 @@ a {
   font-family: "Fredoka", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.8rem;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
@@ -85,30 +85,44 @@ a {
 }
 
 .menu {
-    color: #fff;
+  color: #fff;
+  display: none;
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #ff3d00;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff3d00;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Responsive Nav */
+
+@media screen and (max-width: 800px) {
+  .nav-container ul {
     display: none;
-}
+  }
 
-.nav-link{
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.nav-link::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background-color: #ff3d00;
-    transition: width 0.3s ease;
-}
-
-.nav-link:hover{
-    color: #ff3d00;
-}
-
-.nav-link:hover::after{
-    width: 100%;
+  .menu {
+    color: #fff;
+    display: block;
+    font-size: 3rem;
+  }
 }
