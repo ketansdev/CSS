@@ -44,17 +44,22 @@ a {
   font-variation-settings: "wdth" 100;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Navbar */
 .site-header {
-  background-color: #000;
+  background-color: #000000;
 }
 .navbar {
-  max-width: 160rem;
-  margin: 0 auto;
-  padding: 1.5rem 3rem;
+  box-shadow: 0 14px 30px -14px rgba(255, 0, 0, 0.45);
 }
 
 .nav-container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,6 +118,90 @@ a {
   width: 100%;
 }
 
+/* Hero Section */
+
+.hero-section {
+  width: 100%;
+  min-height: 90vh;
+}
+
+.hero-wrapper {
+  max-width: 140rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Google Sans", sans-serif;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(17, 16, 16, 0.6), 0 6px 12px rgba(255, 0, 0, 0.35);
+
+  transition: font-size 0.3s ease;
+}
+
+h1 span {
+  color: #ff0000;
+}
+
+.hero-content p {
+  text-align: center;
+  font-size: 2.3rem;
+  margin: 5rem;
+}
+
+.hero-content a {
+  padding: 5px 20px;
+  margin: 0 10px;
+  color: #dc0000;
+
+  background: #000;
+  color: #ff1e00;
+  border: 2px solid #ff1e00;
+  box-shadow: 0 0 10px rgba(255, 30, 0, 0.6), 0 0 20px rgba(255, 30, 0, 0.4);
+}
+
+.hero-content .about-us-btn {
+  background: linear-gradient(180deg, #ff3b3b, #c90000);
+  color: #fff;
+  border: 2px solid #fff;
+
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+
+  transition: all 0.3s ease;
+}
+
+.hero-content .about-us-btn:hover {
+  background: linear-gradient(180deg, #ff4d4d, #e00000);
+  box-shadow: 0 14px 40px rgba(255, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.hero-content a :hover {
+  box-shadow: 0 14px 35px rgba(255, 30, 0, 0.5);
+}
+
+.hero-image-container {
+  width: 80rem;
+  margin: 30px 0 0 0;
+}
+
+.hero-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 /* Responsive Nav */
 
 @media screen and (max-width: 800px) {
@@ -124,5 +213,32 @@ a {
     color: #fff;
     display: block;
     font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-bar {
+    padding: 1rem 2rem;
+  }
+}
+
+/* Responsive Hero */
+
+@media screen and (max-width: 1000px) {
+  .hero-content h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-image-container {
+    width: 60%;
+    margin: 30px 0 0 0;
   }
 }
