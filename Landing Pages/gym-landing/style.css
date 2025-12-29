@@ -202,6 +202,68 @@ h1 span {
   object-fit: contain;
 }
 
+/* Main  */
+main {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+/* Membership  */
+.container {
+  max-width: 140rem;
+  margin: auto;
+}
+
+.promo-membership h2 {
+  font-family: "Google Sans", sans-serif;
+  font-weight: 600;
+  font-size: 6rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.mebership-plans-container {
+  width: 100%;
+  box-shadow: 0 14px 40px rgba(255, 0, 0, 0.5);
+  padding: 30px;
+  margin: 10px;
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.duration {
+  width: 300px;
+  height: auto;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+
+.duration h3 {
+  font-size: 2.6rem;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.red-text {
+  color: var(--heading-color);
+}
+
+.duration .price-tag {
+  color: var(--heading-color);
+}
+
+.duration .price {
+  font-size: 2rem;
+}
+
+.duration ul{
+  margin: 10px 20px;
+  line-height: 1.6;
+}
+
 /* Responsive Nav */
 
 @media screen and (max-width: 800px) {
